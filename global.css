@@ -8,3 +8,59 @@ body {
     margin: auto;
     padding: 1em;
   }
+
+header {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+    width: 100%;
+}
+
+.time-filter {
+    margin-left: auto;
+    text-align: right;
+}
+
+.time-filter time, em {
+    display: block;
+}
+
+.time-filter em {
+    color: grey;
+    font-style: italic;
+}
+
+input[type="range"] {
+    width: 300px;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+    gap: 1em;
+}
+
+.legend span {
+    color: gray;
+}
+
+.legend > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legend > div::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+
+}
+
+.legend > div::before {
+    background-color: var(--color);
+}
+
